@@ -8,9 +8,5 @@ namespace ConsoleApp2
 {
     class Tab
     {
-        public Tab()
-        {
-
-        }
     }
 }

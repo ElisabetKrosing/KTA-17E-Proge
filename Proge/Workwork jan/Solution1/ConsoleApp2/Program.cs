@@ -12,9 +12,9 @@ namespace ConsoleApp2
         {
             Console.OutputEncoding = System.Text.Encoding.UTF8;
 
-            Restaurant restaurant = new Restaurant("Resto restaurant", "1100 Main ST.");
+            Restaurant restaurant = new Restaurant("Resto restaurant", "1100 Main ST."); //object
 
-            Tab tab = new Tab();
+            Tab tab = new Tab(); 
 
             tab.Add(7.55);
             tab.Add(3.24);
