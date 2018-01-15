@@ -34,7 +34,7 @@ namespace Hangman_Game
                 string täht = Console.ReadLine();
                 char letter = char.Parse(täht);
                 List<string> arvatudTähed = new List<string>();
-                
+               // int täheAsukoht;
                 int pikkus1 = arvatudTähed.Count;
 
                 //tähtede kontroll
@@ -48,17 +48,20 @@ namespace Hangman_Game
 
                         char jätaMeelde = sõna[ctr];
                         arvatudTähed.Add(täht);
+                      //  täheAsukoht = ctr; 
                         arvatudTähedS[ctr] = letter;
+
                     }
-                    else if (arvatudTähedS[ctr] == sõna[ctr])
-                    {
-                        Console.Write("{0} ", sõna[ctr]);
-                    }
+                   
                     else
                     {
                         Console.Write("_ ");
                     }
                 }
+               // if (arvatudTähedS[täheAsukoht] == sõna[ctr])
+               // {
+               //     Console.Write("{0} ", sõna[ctr]);
+               // }
 
                 //elude arvutamine
                 int pikkus2 = arvatudTähed.Count;
