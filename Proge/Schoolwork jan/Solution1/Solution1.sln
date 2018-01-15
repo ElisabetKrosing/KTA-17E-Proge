@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tunnitöö kaasategemine", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOP restorani ülesanne", "ConsoleApp2\OOP restorani ülesanne.csproj", "{9B7A889A-A34D-4AC3-BC41-5F7860BCBC4E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hangman Game", "Hangman Game\Hangman Game.csproj", "{F2721931-E70E-4F3D-8EAE-9DF73FBCE913}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{9B7A889A-A34D-4AC3-BC41-5F7860BCBC4E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9B7A889A-A34D-4AC3-BC41-5F7860BCBC4E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9B7A889A-A34D-4AC3-BC41-5F7860BCBC4E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F2721931-E70E-4F3D-8EAE-9DF73FBCE913}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F2721931-E70E-4F3D-8EAE-9DF73FBCE913}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F2721931-E70E-4F3D-8EAE-9DF73FBCE913}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F2721931-E70E-4F3D-8EAE-9DF73FBCE913}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
