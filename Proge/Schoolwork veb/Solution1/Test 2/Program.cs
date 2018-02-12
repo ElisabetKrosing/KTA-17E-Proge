@@ -20,6 +20,8 @@ namespace Test_2
             List<String> Sõnad = new List<String>();
             Sõnad = text.Split(' ').ToList();
 
+            string valmisSõna = "";
+
             /*2.Kui on 1 täht lisa esimene täht char listi
             Kui on viimane täht lisa viimane täht char listi
             kui on 2 - eelviimane täht sega need ära.*/
@@ -27,6 +29,7 @@ namespace Test_2
             {
                 List<char> sõna = new List<char>(Sõnad[i]);
                 List<char> tähed = new List<char>();
+                List<char> shuffle = new List<char>();
 
                 for (int j = 0; sõna.Count >= j ; j++) // Sega tähed
                 {
@@ -34,19 +37,52 @@ namespace Test_2
                     {
                          tähed.Add(sõna[j]);
                     }
-                    else if (j == sõna.Count)
+                    else if (j == sõna.Count) //Kõige viimasena
                     {
-                        tähed.Add(sõna[sõna.Count]);
+                        char[] shuffledamine = shuffle.ToArray();
+
+                        for (int ii = 0; ii < shuffledamine.Length; ii++)           //shuffledamine
+                        {
+                            Random rnd = new Random();
+                            int rN = rnd.Next(0, (shuffledamine.Length - ii));
+
+                            char s = shuffledamine[shuffledamine.Length - ii];
+                            shuffledamine[shuffledamine.Length - ii] = shuffledamine[rN];
+                            shuffledamine[rN] = s;
+
+                        }
+
+                        for (int jj = 0; jj < shuffledamine.Length; jj++)
+                        {
+                            tähed.Add(shuffledamine[jj]);
+                        }
+
+                        tähed.Add(sõna[j]);
 
                     }
                     else
                     {
-
+                        shuffle.Add(sõna[j]);
+                        
                     }
-                }
+                    
 
-            }
+                    StringBuilder builder = new StringBuilder();
+                    foreach (int täht in tähed)
+                    {
+                        // Append each int to the StringBuilder overload.
+                        builder.Append(täht);
+                    }
+                     valmisSõna = builder.ToString();
+
+                 
+
+                }
+             }
+            string valmisLause = string.Join(",", valmisSõna.ToArray());
+            Console.WriteLine(valmisLause);
+        }
 
         }
     }
-}
+

@@ -51,6 +51,7 @@ namespace Test
                           
                 ++index;
             }
+
             return new String(chars);
         }
     }
